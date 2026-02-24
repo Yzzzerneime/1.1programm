@@ -5,3 +5,5 @@ double squar = 5.0;
 if ((squar * squar) > (3.14 * circl * circl)) Console.WriteLine("квадрат больше!");
 else if ((squar * squar) == (3.14 * circl * circl)) Console.WriteLine("Одинаковые!");
 else Console.WriteLine("круг больше!");
+
+
