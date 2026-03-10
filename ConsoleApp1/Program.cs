@@ -1,7 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
-double circl = 5.0;
-double squar = 5.0;
-
-if ((squar * squar) > (3.14 * circl * circl)) Console.WriteLine("квадрат больше!");
-else if ((squar * squar) == (3.14 * circl * circl)) Console.WriteLine("Одинаковые!");
-else Console.WriteLine("круг больше!");
+﻿namespace AreaComparison
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Взаимодействие с пользователем
+            double radius = double.Parse(Console.ReadLine());
+            double side = double.Parse(Console.ReadLine());
+            
+            // Логика
+            string result = Logic.CompareAreas(radius, side);
+            
+            // Взаимодействие с пользователем
+            Console.WriteLine(result);
+        }
+    }
+}
